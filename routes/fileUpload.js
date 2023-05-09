@@ -13,7 +13,7 @@ const {
 
 // api route
 
-// router.post("/imageUpload",imageUpload);
+router.post("/imageUpload",imageUpload);
 // router.post("/videoUpload", videoUpload);
 
 router.post("/localFile", localFileUpload);

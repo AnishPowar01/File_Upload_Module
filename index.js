@@ -19,7 +19,12 @@ dbConnect();
 
 // middleware add
 app.use(express.json());
-app.use(fileUpload());
+app.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: "/tmp/",
+  })
+);
 
 // cloud connect
 
